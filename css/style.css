@@ -1,0 +1,98 @@
+@import './default.css';
+@font-face {
+  font-family: 'Katuri';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html,body{
+  font-size:16px;
+}
+body{
+  background:#EAF5E8;
+  font-family:'Katuri';
+}
+.textbox{
+  margin-bottom:50px;
+  padding-top:60px; padding-left:70px;
+
+}
+.textbox h1{
+  margin-bottom:10px;
+  font-size:3rem;
+}
+.textbox p{
+  font-size:1.5rem;
+}
+.fruit_wrap{
+  z-index:100;
+}
+.fruitboard{
+  margin-left:700px;
+  /* margin-top:80px; */
+}
+.fruit{
+  position:absolute;
+  cursor:pointer;
+}
+td{
+  min-width:100px; padding:5px 8px;
+  background:#fff;
+  border:2px solid #333;
+  text-align:center;
+  letter-spacing:1px;
+}
+.blank td{
+  height:100px;
+}
+.plate{
+  display:flex; margin:150px;
+  width:991px; height:290px;
+  
+  background: url('../img/dish1.png') no-repeat left top;
+  background-size:contain;
+}
+.plate .blank_wrap{
+  display:flex; flex-flow:row wrap;
+  margin:auto; margin-left:130px;
+  width:684px;
+  gap:16px 60px;
+}
+.end{
+  position:absolute; left:-800px; top:-850px;
+  width:500px;
+  text-align:center;
+  opacity:0;
+  transition:opacity .3s;
+}
+.end.on{
+  left:100px; top:300px;
+  opacity:1;
+}
+.end span{
+  margin-bottom:40px;
+  font-size:5rem;
+  display:block;
+  color:#3a3;
+  
+}
+.end button{
+  padding:10px 20px; padding-left:56px;
+  font-size:2rem; font-weight:bold;
+  background:#FFE7EE url('https://cdn-icons-png.flaticon.com/128/6415/6415704.png') no-repeat left 20px center;
+  background-size:30px;
+  border:4px solid #FFB4D2;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.end button:hover{
+  background-color:#F5D7E6;
+  border:4px solid rgb(232, 124, 176);
+  
+}
+.end button:active{
+  background-color:#fee;
+  border-color:#FFC6D2;
+  
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+body,div,header,main,section,nav,aside,article,footer,address,h1,ol,ul,li,dl,dt,dd,h2,h3,h4,h5,h6,form,fieldset,legend,table,tbody,th,td,caption,p,button,input,select,option,textarea,figure,figcaption,blockquote{
+    margin:0; padding:0;
+}
+ol,ul{
+    list-style:none;
+}
+img{
+    display:block; border:0px;
+}
+a{
+    text-decoration: none;
+}
+address,em,i{
+    font-style:normal;
+}
+button,fieldset,select,input{
+    border:0px;
+}
+legend,caption,hr{
+    display:none;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0px;
+}
+/* 
+h1,h2,h3,h4,h5,h6,b
+*/
+.sr_only{
+    display:block;
+    width:0; height:0; font-size:0; line-height:0;
+    visibility:hidden; overflow:hidden; position:absolute;
+    left:0; top:0; text-indent:-9999em;
+}
