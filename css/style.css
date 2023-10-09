@@ -12,10 +12,10 @@ body{
   background:#EAF5E8;
   font-family:'Katuri';
 }
+
 .textbox{
   margin-bottom:50px;
   padding-top:60px; padding-left:70px;
-
 }
 .textbox h1{
   margin-bottom:10px;
@@ -24,13 +24,18 @@ body{
 .textbox p{
   font-size:1.5rem;
 }
+.wrapper{
+  display:flex; margin-left:70px;
+}
 .fruit_wrap{
+  /* position:relative; */
   z-index:100;
 }
 .fruitboard{
-  margin-left:700px;
+  /* margin-left:700px; */
   /* margin-top:80px; */
 }
+
 .fruit{
   position:absolute;
   cursor:pointer;
@@ -45,18 +50,8 @@ td{
 .blank td{
   height:100px;
 }
-.plate{
-  display:flex; margin:150px;
-  width:991px; height:290px;
-  
-  background: url('../img/dish1.png') no-repeat left top;
-  background-size:contain;
-}
-.plate .blank_wrap{
-  display:flex; flex-flow:row wrap;
-  margin:auto; margin-left:130px;
-  width:684px;
-  gap:16px 60px;
+.blank img{
+  display:none;
 }
 .end{
   position:absolute; left:-800px; top:-850px;
