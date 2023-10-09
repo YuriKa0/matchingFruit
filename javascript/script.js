@@ -9,7 +9,7 @@ let btnReplay = endingbox.querySelector('button');
 console.log(btnReplay);
 // 과일 랜덤 위치
 $fruits.each(function(){
-  let positionX = Math.floor(Math.random() * 450 + 50);
+  let positionX = Math.floor(Math.random() * 550 + 850);
   let positionY = Math.floor(Math.random() * 400 + 170);
   
   $(this).css({'left' : positionX, 'top' : positionY});
@@ -51,7 +51,7 @@ $fruits.draggable({
       
     }else{//칸 외에 드랍
       uncorrect.play();
-      $(this).css({left: Math.floor(Math.random() * 500), top: Math.floor(Math.random() * 500 + 50) })
+      $(this).css({left: Math.floor(Math.random() * 550+850), top: Math.floor(Math.random() * 500 + 50) })
       
     }
 
